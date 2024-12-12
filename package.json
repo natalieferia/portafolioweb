@@ -1,0 +1,16 @@
+{
+  "name": "portafolioweb",
+  "version": "1.0.0",
+  "description": "mi portafolio web",
+  "main": "scripts.js",
+  "scripts": {
+    "start": "http-server public -p 8080 --cors",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}
