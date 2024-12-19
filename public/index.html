@@ -50,7 +50,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link page-scroll d-flex flex-row align-items-center text-primary" 
-                           href="https://github.com/natalieferia1" 
+                           href="https://github.com/natalieferia" 
                            target="_blank" 
                            rel="noopener noreferrer">
                             <!-- Icono de GitHub usando SVG oficial -->
@@ -146,9 +146,14 @@
             <div class="col-md-6 mr-auto">
                 <h2>Creando el futuro digital.</h2>
                 <p class="mb-5">Soy una mujer apasionada por el aprendizaje constante. Disfruto cada oportunidad para adquirir nuevos conocimientos y habilidades, ya que creo firmemente en el crecimiento personal y profesional.".</p>
-                <a href="#" class="btn btn-light">
-                    Hoja de vida
-                </a>
+                <div class="row mt-6">
+                    <div class="col-md-6 mx-auto text-center">
+                        <a href="Curriculum%20Natalie%20Feria.pdf" download class="btn btn-light">
+                            Hoja de vida
+                        </a>
+                    </div>
+                </div>
+                
             </div>
             <div class="col-md-5">
                 <div class="slick-about">
@@ -206,7 +211,12 @@
         <div class="row mt-4">
             <div class="col-md-6 mx-auto text-center">
                 <h5 class="mb-4">Tienes una pregunta?</h5>
-                <a href="#" class="btn btn-primary">Contactame</a>
+                <div class="row mt-6">
+                    <div class="col-md-6 mx-auto text-center">
+                        <!-- Botón de Contacto -->
+                        <a href="mailto:natalieferia1@gmail.com" class="btn btn-primary">
+                            Contáctame
+                        </a>
             </div>
         </div>
     </div>
@@ -238,13 +248,21 @@
             </div>
            
             
-             
-        <div class="row mt-6">
-            <div class="col-md-6 mx-auto text-center">
-                <a href="#" class="btn btn-primary">enviar correo</a>
+            <div class="row mt-6">
+                <div class="col-md-6 mx-auto text-center">
+                    <a href="#" class="btn btn-primary" onclick="handleButtonClick()">Enviar correo</a>
+                </div>
             </div>
-        </div>
-    </div>
+            
+            <script>
+                function handleButtonClick() {
+                    // Abrir el cliente de correo
+                    window.location.href = "mailto:natalieferia1@gmail.com";
+                    
+                }
+            </script>
+            
+            
 </section>
 
 <!--footer-->
