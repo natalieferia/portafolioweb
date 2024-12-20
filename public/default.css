@@ -9,41 +9,94 @@
 * Copyright 2011-2017 Twitter, Inc. 
 * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)*/
 
-@media (max-width: 767px) {
+.color-switcher {
+  position: fixed; /* Posición fija para que se mantenga en su lugar */
+  top: 20px;
+  right: 20px;
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease; /* Transición suave para cambios de tamaño */
+}
+
+.color-switcher h6 {
+  margin-top: 0;
+  font-size: 16px; /* Tamaño de fuente base */
+  text-align: center; /* Centrar el título */
+}
+
+.color-switcher ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  display: flex;
+  flex-wrap: wrap; /* Permite que los colores se ajusten a varias líneas */
+  justify-content: center; /* Centra los elementos */
+}
+
+.color-switcher li {
+  width: 30px; /* Tamaño base de los círculos */
+  height: 30px;
+  margin: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.color-switcher li.active {
+  border-color: #000;
+}
+
+/* Media Queries para Responsive Design */
+
+/* Pantallas extra pequeñas (móviles muy pequeños, menos de 576px) */
+@media (max-width: 575.98px) {
   .color-switcher {
-    display: none; /* Oculta el elemento */
+    top: 10px;
+    right: 10px;
+    padding: 5px;
+    font-size: 0.8em; /* Reducir tamaño de fuente */
+  }
+
+  .color-switcher h6 {
+    font-size: 14px;
+  }
+
+  .color-switcher li {
+    width: 20px;
+    height: 20px;
+    margin: 3px;
   }
 }
-:root {
-  --blue: #2979ff;
-  --indigo: #3d5afe;
-  --purple: #d500f9;
-  --pink: #f50057;
-  --red: #ff1744;
-  --orange: #ff9100;
-  --yellow: #ffea00;
-  --green: #00e676;
-  --teal: #1de9b6;
-  --cyan: #00e5ff;
-  --white: #ffffff;
-  --gray: #607D8B;
-  --gray-dark: #455A64;
-  --primary: #1de9b6;
-  --secondary: #ffffff;
-  --success: #00e676;
-  --info: #00e5ff;
-  --warning: #ffea00;
-  --danger: #ff1744;
-  --light: #ECEFF1;
-  --dark: #11171a;
-  --breakpoint-xs: 0;
-  --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Inter UI", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
 
+/* Pantallas pequeñas (móviles en general, de 576px a 767.98px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .color-switcher {
+        top: 15px;
+        right: 15px;
+    }
+  .color-switcher li {
+    width: 25px;
+    height: 25px;
+    margin: 4px;
+  }
+}
+
+/* Pantallas medianas (tabletas, de 768px a 991.98px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .color-switcher {
+        top: 20px;
+        right: 20px;
+    }
+}
+
+/* Pantallas grandes (escritorios, 992px y más) */
+@media (min-width: 992px) {
+  /* No es necesario ajustar mucho aquí, ya que los estilos base suelen ser adecuados */
+}
 *,
 *::before,
 *::after {
