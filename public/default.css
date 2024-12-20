@@ -126,6 +126,47 @@ body {
   text-align: left;
   background-color: #000000; }
 
+  .contenido-principal {
+    /* Estilos para escritorio (se aplican por defecto) */
+}
+
+.botones-cv {
+    margin-top: 6rem; /* Equivalente a mt-6 en Bootstrap */
+}
+
+/* Media Query para móviles (pantallas menores a 768px) */
+@media (max-width: 767.98px) {
+    .contenido-principal {
+        padding: 20px; /* Añade padding a los lados */
+        text-align: center; /* Centra el texto */
+    }
+
+    .contenido-principal h2 {
+        font-size: 1.5rem; /* Reduce el tamaño del título */
+        margin-bottom: 1rem; /* Añade un margen inferior */
+    }
+
+    .contenido-principal p {
+        margin-bottom: 2rem; /* Reduce el margen inferior del párrafo */
+        font-size: 1rem; /*Ajustar el tamaño de fuente*/
+    }
+
+    .botones-cv {
+        margin-top: 3rem; /* Reduce el margen superior entre el párrafo y el botón */
+    }
+
+    .botones-cv .btn {
+      width: 100%; /* El botón ocupa todo el ancho disponible */
+      max-width: 300px; /* Limita el ancho máximo del botón */
+      margin: 0 auto; /* Centra el botón horizontalmente */
+      display: block; /* Para que margin: 0 auto funcione correctamente */
+    }
+
+    .col-md-6.mx-auto.text-center{ /*quita el espaciado que genera bootstrap*/
+        padding: 0;
+    }
+}
+
 [tabindex="-1"]:focus {
   outline: 0 !important; }
 
