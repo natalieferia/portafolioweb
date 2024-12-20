@@ -155,16 +155,6 @@ body {
         margin-top: 3rem; /* Reduce el margen superior entre el párrafo y el botón */
     }
 
-    .botones-cv .btn {
-      width: 100%; /* El botón ocupa todo el ancho disponible */
-      max-width: 300px; /* Limita el ancho máximo del botón */
-      margin: 0 auto; /* Centra el botón horizontalmente */
-      display: block; /* Para que margin: 0 auto funcione correctamente */
-    }
-
-    .col-md-6.mx-auto.text-center{ /*quita el espaciado que genera bootstrap*/
-        padding: 0;
-    }
 }
 
 
