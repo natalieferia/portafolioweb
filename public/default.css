@@ -136,17 +136,7 @@ body {
 
 /* Media Query para móviles (pantallas menores a 768px) */
 @media (max-width: 767.98px) {
-    .contenido-principal {
-        padding: 20px; /* Añade padding a los lados */
-        text-align: center; /* Centra el texto */
-    }
-
-    .contenido-principal h2 {
-        font-size: 1.5rem; /* Reduce el tamaño del título */
-        margin-bottom: 1rem; /* Añade un margen inferior */
-    }
-
-    .contenido-principal p {
+ .contenido-principal p {
         margin-bottom: 2rem; /* Reduce el margen inferior del párrafo */
         font-size: 1rem; /*Ajustar el tamaño de fuente*/
     }
