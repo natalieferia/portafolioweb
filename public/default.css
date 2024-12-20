@@ -167,6 +167,34 @@ body {
     }
 }
 
+/* Media Query para pantallas mayores a 768px */
+@media (min-width: 768px) {
+  .contenido-principal {
+    max-width: 800px; /* Ajusta el ancho máximo del contenido principal */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    padding: 40px; /* Espacio alrededor del contenido */
+  }
+
+  .contenido-principal h2 {
+    font-size: 2.5rem; /* Tamaño de fuente para el título */
+    text-align: center; /* Centra el título */
+  }
+
+  .contenido-principal p {
+    font-size: 1.2rem; /* Tamaño de fuente para el párrafo */
+    text-align: justify; /* Justifica el texto para una apariencia más limpia */
+  }
+
+  .botones-cv {
+    display: flex; /* Flexbox para organizar los botones horizontalmente */
+    justify-content: center; /* Centra los botones horizontalmente */
+    margin-top: 40px;
+  }
+
+  .botones-cv .btn {
+    margin: 0 10px; /* Espacio entre los botones */
+  }
+}
 [tabindex="-1"]:focus {
   outline: 0 !important; }
 
